@@ -1,0 +1,91 @@
+<div id="head-nav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="fa fa-gear"></span> </button>
+      <a class="navbar-brand" href="<?=base_url();?>"><span>FEX</span></a></div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+       
+        </li>
+        <li class="active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> <b class="caret"></b></a>
+          <ul class="dropdown-menu col-menu-2">
+            <li class="col-sm-6 no-padding">
+              <ul>
+                <li class="dropdown-header"><i class="fa fa-group"></i>Usuarios</li>
+               
+
+                <!--
+                <li><a href="#">Cambio de Contraseña</a></li>
+                <li><a href="#">Perfil de Usuario</a></li>
+               -->
+
+                <li class="dropdown-header"><i class="fa fa-question-circle"></i>Información</li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </li>
+            <li  class="col-sm-6 no-padding">
+              <ul>
+                <li  class="dropdown-header"><i class="fa fa-gear"></i> <a href="" data-toggle="modal" data-target="#basicModal" >Versión del Sistema</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right user-nav">
+        <li class="dropdown profile_menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$nombre;?><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            
+<!--
+            <li><a href="#">Mi Cuenta</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Mnsajes</a></li>
+            <li class="divider"></li>
+
+          -->
+            <li><a href="<?=base_url('index.php/sessioncontroller/logout')?>">Cerrar Sistema</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right not-nav">
+        <li class="button dropdown"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class=" fa fa-comments"></i></a>
+          <ul class="dropdown-menu messages">
+            <li>
+              <div class="nano nscroller">
+                <div class="content">
+                  <ul>
+                    
+
+                    <!--<li> <a href="#"> <img src="<?= base_url('assets/images/atlantis.jpg')?>" alt="avatar" /><span class="date pull-right">9 May.</span><span class="name">Atlantis</span>Realizo Pago en efectivo mayor a 300,000 pesos permitido para  Persona Fisica.</a> </li>-->
+                  </ul>
+                </div>
+              </div>
+              <ul class="foot">
+               <!-- <li><a href="#">Ver más Mensajes.</a></li>-->
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="button dropdown"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="bubble">2</span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <div class="nano nscroller">
+                <div class="content">
+                  <ul>
+                    <li><a href="#"><i class="fa fa-credit-card danger"></i> <b>Atlantis</b> Realizo un pago en efectivo. <span class="date">1 hour ago.</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="foot">
+                <li><a href="#">Ver más </a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+</div>
+
